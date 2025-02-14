@@ -87,14 +87,21 @@ WSGI_APPLICATION = 'locallibrary.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'locallibrarydb',
-        'USER' : 'root',
-        'PASSWORD' : 'SERV_0980',
-        'HOST' : 'localhost',
-        'PORT' : '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'locallibrarydb',
+#         'USER' : 'root',
+#         'PASSWORD' : 'SERV_0980',
+#         'HOST' : 'localhost',
+#         'PORT' : '3306',
+#     }
+# }
 
 
 # Password validation
